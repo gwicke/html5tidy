@@ -1,0 +1,32 @@
+{
+  "name": "html5tidy",
+  "description": "A Rust library with bindings!",
+  "main": "js/lib/index.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Gabriel Wicke",
+    "email": "",
+    "url": "https://github.com/gwicke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gwicke/html5tidy"
+  },
+  "license": "MIT",
+  "keywords": [
+    "html5tidy"
+  ],
+  "scripts": {
+    "test": "npm i && ./node_modules/.bin/mocha -R spec js/tests/**/*.js",
+    "install": "cargo build --release --verbose"
+  },
+  "dependencies": {
+    "ffi": "^1.2.7",
+    "ref": "^1.0.1",
+    "ref-struct": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "mocha": "^2.2.1"
+  }
+}

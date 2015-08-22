@@ -1,0 +1,16 @@
+[package]
+name = "html5tidy"
+version = "0.1.0"
+authors = ["Gabriel Wicke <gwicke@wikimedia.org>"]
+
+[dependencies]
+libc = "0.1"
+html5ever = "0.2.0"
+tendril = "0.1.3"
+
+[lib]
+name = "html5tidy"
+crate_type = ["dylib"]
+
+[profile.release]
+lto = true
