@@ -15,7 +15,7 @@ var lib = FFI.Library(path.resolve(__dirname, '../../target/release', libPath), 
 
 var input = fs.readFileSync('/tmp/test.html');
 var startTime = Date.now();
-var n = 1250;
+var n = 10;
 //input = new Buffer("foo");
 for (var i = 0; i < n; i++) {
     var html = lib.html5tidy(input);
