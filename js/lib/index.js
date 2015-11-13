@@ -13,7 +13,7 @@ var lib = FFI.Library(path.resolve(__dirname, '../../target/release', libPath), 
   'html5tidy': [ 'CString', [ 'pointer' ] ],
 });
 
-var input = fs.readFileSync('/tmp/test.html');
+var input = fs.readFileSync('js/tests/obama.html');
 var startTime = Date.now();
 var n = 10;
 //input = new Buffer("foo");

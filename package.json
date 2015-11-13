@@ -21,8 +21,8 @@
     "install": "cargo build --release --verbose"
   },
   "dependencies": {
-    "ffi": "^1.2.7",
-    "ref": "^1.0.1",
+    "ffi": "git+https://github.com/node-ffi/node-ffi.git",
+    "ref": "^1.2.0",
     "ref-struct": "^1.0.1"
   },
   "devDependencies": {
